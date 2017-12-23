@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7719323C1153E82F01BCCFB3 /* Pods_RxSwiftKokorin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 872C795B87D229726AD44FBB /* Pods_RxSwiftKokorin.framework */; };
 		7FC17D531F5A92F800E09823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC17D521F5A92F800E09823 /* AppDelegate.swift */; };
 		7FC17D551F5A92F800E09823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC17D541F5A92F800E09823 /* ViewController.swift */; };
 		7FC17D581F5A92F800E09823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC17D561F5A92F800E09823 /* Main.storyboard */; };
 		7FC17D5A1F5A92F800E09823 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FC17D591F5A92F800E09823 /* Assets.xcassets */; };
 		7FC17D5D1F5A92F800E09823 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FC17D5B1F5A92F800E09823 /* LaunchScreen.storyboard */; };
+		7FC17D671F5A94C900E09823 /* SupportCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC17D661F5A94C900E09823 /* SupportCode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		7FC17D591F5A92F800E09823 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FC17D5C1F5A92F800E09823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FC17D5E1F5A92F800E09823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7FC17D661F5A94C900E09823 /* SupportCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportCode.swift; sourceTree = "<group>"; };
+		872C795B87D229726AD44FBB /* Pods_RxSwiftKokorin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftKokorin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A7F8540C83A1B7F476C851B /* Pods-RxSwiftKokorin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKokorin.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftKokorin/Pods-RxSwiftKokorin.release.xcconfig"; sourceTree = "<group>"; };
+		D09F8A5EE810943BC8516C41 /* Pods-RxSwiftKokorin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftKokorin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftKokorin/Pods-RxSwiftKokorin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7719323C1153E82F01BCCFB3 /* Pods_RxSwiftKokorin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56AF59961A98CBC69EC874B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D09F8A5EE810943BC8516C41 /* Pods-RxSwiftKokorin.debug.xcconfig */,
+				9A7F8540C83A1B7F476C851B /* Pods-RxSwiftKokorin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7FC17D461F5A92F800E09823 = {
 			isa = PBXGroup;
 			children = (
 				7FC17D511F5A92F800E09823 /* RxSwiftKokorin */,
 				7FC17D501F5A92F800E09823 /* Products */,
+				56AF59961A98CBC69EC874B7 /* Pods */,
+				8CDA6890F301F2B2743BE50B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				7FC17D521F5A92F800E09823 /* AppDelegate.swift */,
+				7FC17D661F5A94C900E09823 /* SupportCode.swift */,
 				7FC17D541F5A92F800E09823 /* ViewController.swift */,
 				7FC17D561F5A92F800E09823 /* Main.storyboard */,
 				7FC17D591F5A92F800E09823 /* Assets.xcassets */,
@@ -64,6 +83,14 @@
 			path = RxSwiftKokorin;
 			sourceTree = "<group>";
 		};
+		8CDA6890F301F2B2743BE50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				872C795B87D229726AD44FBB /* Pods_RxSwiftKokorin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7FC17D611F5A92F800E09823 /* Build configuration list for PBXNativeTarget "RxSwiftKokorin" */;
 			buildPhases = (
+				58CFC388B72407676BDD65FB /* [CP] Check Pods Manifest.lock */,
 				7FC17D4B1F5A92F800E09823 /* Sources */,
 				7FC17D4C1F5A92F800E09823 /* Frameworks */,
 				7FC17D4D1F5A92F800E09823 /* Resources */,
+				6E8AC3FCE61F3D527E48D9B8 /* [CP] Embed Pods Frameworks */,
+				3D612C280A1B95B29856E82C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +162,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D612C280A1B95B29856E82C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftKokorin/Pods-RxSwiftKokorin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58CFC388B72407676BDD65FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E8AC3FCE61F3D527E48D9B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxSwiftKokorin/Pods-RxSwiftKokorin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7FC17D4B1F5A92F800E09823 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +217,7 @@
 			files = (
 				7FC17D551F5A92F800E09823 /* ViewController.swift in Sources */,
 				7FC17D531F5A92F800E09823 /* AppDelegate.swift in Sources */,
+				7FC17D671F5A94C900E09823 /* SupportCode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +340,7 @@
 		};
 		7FC17D621F5A92F800E09823 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D09F8A5EE810943BC8516C41 /* Pods-RxSwiftKokorin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DFT9FL7J65;
@@ -274,6 +354,7 @@
 		};
 		7FC17D631F5A92F800E09823 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A7F8540C83A1B7F476C851B /* Pods-RxSwiftKokorin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = DFT9FL7J65;
@@ -304,6 +385,7 @@
 				7FC17D631F5A92F800E09823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
